@@ -55,7 +55,6 @@ variable "delete_data_disks_on_termination" {
 
 variable "resource_group_name" {}
 variable "vnet" {}
-variable "subnet" {}
 
 variable "admin_username" {}
 
