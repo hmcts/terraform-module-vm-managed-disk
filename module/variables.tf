@@ -10,7 +10,7 @@ variable "location" {
   default = "uksouth"
 }
 
-variable "subnet_id" {}
+variable "subnet" {}
 
 variable "ssh_key" {}
 
