@@ -131,10 +131,6 @@ resource "azurerm_virtual_machine" "reform-nonprod" {
     admin_password = "${random_string.password.result}"
   }
 
-  lifecycle {
-    ignore_changes = ["os_profile"]
-  }
-
   os_profile_linux_config {
     disable_password_authentication = true
 
@@ -150,7 +146,7 @@ resource "azurerm_virtual_machine" "reform-nonprod" {
   }
 
   lifecycle {
-    ignore_changes = ["boot_diagnostics"]
+    ignore_changes = ["boot_diagnostics","os_profile"]
   }
 
   tags {
