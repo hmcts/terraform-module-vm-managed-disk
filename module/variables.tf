@@ -60,3 +60,4 @@ variable "subnet" {}
 variable "admin_username" {}
 
 variable "port" {}
+variable "azure_subscription_id" {}
