@@ -46,3 +46,4 @@ variable "vnet" {}
 variable "subnet" {}
 
 variable "port" {}
+variable "admin_username" {}
