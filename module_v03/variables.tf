@@ -10,8 +10,6 @@ variable "location" {
   default = "UK South"
 }
 
-variable "subnet_id" {}
-variable "avset_id" {}
 variable "ssh_key" {}
 variable "storage_account" {}
 variable "diagnostics_storage_account" {}
@@ -41,5 +39,9 @@ variable "role" {
   default = "UNSET"
 }
 
+variable "azure_subscription_id" {}
+variable "resource_group_name" {}
+variable "vnet" {}
+variable "subnet" {}
 
 variable "port" {}
