@@ -22,7 +22,7 @@ resource "random_string" "password" {
   length  = 20
   special = true
     lifecycle {
-    ignore_changes = ["length","special"]
+    ignore_changes = ["*"]
   }
 }
 
