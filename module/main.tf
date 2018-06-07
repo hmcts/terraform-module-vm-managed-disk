@@ -108,7 +108,7 @@ resource "azurerm_virtual_machine" "reform-nonprod" {
   storage_image_reference {
     publisher = "OpenLogic"
     offer     = "CentOS"
-    sku       = "7.3"
+    sku       = "7.4"
     version   = "latest"
   }
 
@@ -149,7 +149,7 @@ resource "azurerm_virtual_machine" "reform-nonprod" {
   }
 
   lifecycle {
-    ignore_changes = ["boot_diagnostics","os_profile"]
+    ignore_changes = ["boot_diagnostics","os_profile","storage_image_reference"]
   }
 
   tags {
