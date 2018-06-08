@@ -108,7 +108,7 @@ resource "azurerm_virtual_machine" "reform-nonprod" {
   storage_image_reference {
     publisher = "OpenLogic"
     offer     = "CentOS"
-    sku       = "7.4"
+    sku       = "7.5"
     version   = "latest"
   }
 
